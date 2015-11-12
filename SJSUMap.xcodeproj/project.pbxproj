@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		114422771BF08964006E6C19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 114422761BF08964006E6C19 /* main.m */; };
+		1144227A1BF08964006E6C19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 114422791BF08964006E6C19 /* AppDelegate.m */; };
+		1144227D1BF08964006E6C19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1144227C1BF08964006E6C19 /* ViewController.m */; };
+		114422801BF08964006E6C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1144227E1BF08964006E6C19 /* Main.storyboard */; };
+		114422851BF08964006E6C19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114422831BF08964006E6C19 /* LaunchScreen.xib */; };
+		114422911BF08964006E6C19 /* SJSUMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 114422901BF08964006E6C19 /* SJSUMapTests.m */; };
+		1144229B1BF08C28006E6C19 /* campusmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 1144229A1BF08C28006E6C19 /* campusmap.png */; };
+		1144229D1BF0911F006E6C19 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1144229C1BF0911F006E6C19 /* CoreLocation.framework */; };
+		114F58861BF128E4009349A3 /* buildingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F58851BF128E4009349A3 /* buildingItem.m */; };
+		114F588D1BF1AD79009349A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114F588C1BF1AD79009349A3 /* Images.xcassets */; };
+		357EB8CB03BB290939794CE7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E17DAAE04E39DEA5BA78AB7 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1144228B1BF08964006E6C19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 114422691BF08964006E6C19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 114422701BF08964006E6C19;
+			remoteInfo = SJSUMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		114422711BF08964006E6C19 /* SJSUMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJSUMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		114422751BF08964006E6C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		114422761BF08964006E6C19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		114422781BF08964006E6C19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		114422791BF08964006E6C19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1144227B1BF08964006E6C19 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1144227C1BF08964006E6C19 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1144227F1BF08964006E6C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		114422841BF08964006E6C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1144228A1BF08964006E6C19 /* SJSUMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJSUMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1144228F1BF08964006E6C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		114422901BF08964006E6C19 /* SJSUMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJSUMapTests.m; sourceTree = "<group>"; };
+		1144229A1BF08C28006E6C19 /* campusmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = campusmap.png; path = SJSUMap/campusmap.png; sourceTree = "<group>"; };
+		1144229C1BF0911F006E6C19 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		114F58841BF12882009349A3 /* buildingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buildingItem.h; sourceTree = "<group>"; };
+		114F58851BF128E4009349A3 /* buildingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buildingItem.m; sourceTree = "<group>"; };
+		114F588A1BF14781009349A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		114F588C1BF1AD79009349A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SJSUMap/Images.xcassets; sourceTree = "<group>"; };
+		5E17DAAE04E39DEA5BA78AB7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E26355FDAB1BB260D4A5A2D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D333C92A413A055E75A77FA0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1144226E1BF08964006E6C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1144229D1BF0911F006E6C19 /* CoreLocation.framework in Frameworks */,
+				357EB8CB03BB290939794CE7 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114422871BF08964006E6C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		114422681BF08964006E6C19 = {
+			isa = PBXGroup;
+			children = (
+				114F588C1BF1AD79009349A3 /* Images.xcassets */,
+				1144229C1BF0911F006E6C19 /* CoreLocation.framework */,
+				1144229A1BF08C28006E6C19 /* campusmap.png */,
+				114422731BF08964006E6C19 /* SJSUMap */,
+				1144228D1BF08964006E6C19 /* SJSUMapTests */,
+				114422721BF08964006E6C19 /* Products */,
+				5B457E97D37A8988FD5BC595 /* Pods */,
+				CF3D9C8F11288A0439FE0E57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		114422721BF08964006E6C19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				114422711BF08964006E6C19 /* SJSUMap.app */,
+				1144228A1BF08964006E6C19 /* SJSUMapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		114422731BF08964006E6C19 /* SJSUMap */ = {
+			isa = PBXGroup;
+			children = (
+				114422781BF08964006E6C19 /* AppDelegate.h */,
+				114422791BF08964006E6C19 /* AppDelegate.m */,
+				1144227B1BF08964006E6C19 /* ViewController.h */,
+				1144227C1BF08964006E6C19 /* ViewController.m */,
+				1144227E1BF08964006E6C19 /* Main.storyboard */,
+				114422831BF08964006E6C19 /* LaunchScreen.xib */,
+				114422741BF08964006E6C19 /* Supporting Files */,
+				114F58841BF12882009349A3 /* buildingItem.h */,
+				114F58851BF128E4009349A3 /* buildingItem.m */,
+			);
+			path = SJSUMap;
+			sourceTree = "<group>";
+		};
+		114422741BF08964006E6C19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				114422751BF08964006E6C19 /* Info.plist */,
+				114422761BF08964006E6C19 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1144228D1BF08964006E6C19 /* SJSUMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				114422901BF08964006E6C19 /* SJSUMapTests.m */,
+				1144228E1BF08964006E6C19 /* Supporting Files */,
+			);
+			path = SJSUMapTests;
+			sourceTree = "<group>";
+		};
+		1144228E1BF08964006E6C19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1144228F1BF08964006E6C19 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B457E97D37A8988FD5BC595 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D333C92A413A055E75A77FA0 /* Pods.debug.xcconfig */,
+				5E26355FDAB1BB260D4A5A2D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF3D9C8F11288A0439FE0E57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				114F588A1BF14781009349A3 /* QuartzCore.framework */,
+				5E17DAAE04E39DEA5BA78AB7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		114422701BF08964006E6C19 /* SJSUMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 114422941BF08964006E6C19 /* Build configuration list for PBXNativeTarget "SJSUMap" */;
+			buildPhases = (
+				3685957475EE6237474E8987 /* Check Pods Manifest.lock */,
+				1144226D1BF08964006E6C19 /* Sources */,
+				1144226E1BF08964006E6C19 /* Frameworks */,
+				1144226F1BF08964006E6C19 /* Resources */,
+				A6A543A9CE53FAAB4E0843DE /* Embed Pods Frameworks */,
+				809215949C7AB376F99FFF0F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SJSUMap;
+			productName = SJSUMap;
+			productReference = 114422711BF08964006E6C19 /* SJSUMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		114422891BF08964006E6C19 /* SJSUMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 114422971BF08964006E6C19 /* Build configuration list for PBXNativeTarget "SJSUMapTests" */;
+			buildPhases = (
+				114422861BF08964006E6C19 /* Sources */,
+				114422871BF08964006E6C19 /* Frameworks */,
+				114422881BF08964006E6C19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1144228C1BF08964006E6C19 /* PBXTargetDependency */,
+			);
+			name = SJSUMapTests;
+			productName = SJSUMapTests;
+			productReference = 1144228A1BF08964006E6C19 /* SJSUMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		114422691BF08964006E6C19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = cmpe;
+				TargetAttributes = {
+					114422701BF08964006E6C19 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					114422891BF08964006E6C19 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 114422701BF08964006E6C19;
+					};
+				};
+			};
+			buildConfigurationList = 1144226C1BF08964006E6C19 /* Build configuration list for PBXProject "SJSUMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 114422681BF08964006E6C19;
+			productRefGroup = 114422721BF08964006E6C19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				114422701BF08964006E6C19 /* SJSUMap */,
+				114422891BF08964006E6C19 /* SJSUMapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1144226F1BF08964006E6C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114F588D1BF1AD79009349A3 /* Images.xcassets in Resources */,
+				1144229B1BF08C28006E6C19 /* campusmap.png in Resources */,
+				114422801BF08964006E6C19 /* Main.storyboard in Resources */,
+				114422851BF08964006E6C19 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114422881BF08964006E6C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3685957475EE6237474E8987 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		809215949C7AB376F99FFF0F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6A543A9CE53FAAB4E0843DE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1144226D1BF08964006E6C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1144227D1BF08964006E6C19 /* ViewController.m in Sources */,
+				114F58861BF128E4009349A3 /* buildingItem.m in Sources */,
+				1144227A1BF08964006E6C19 /* AppDelegate.m in Sources */,
+				114422771BF08964006E6C19 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114422861BF08964006E6C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114422911BF08964006E6C19 /* SJSUMapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1144228C1BF08964006E6C19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 114422701BF08964006E6C19 /* SJSUMap */;
+			targetProxy = 1144228B1BF08964006E6C19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1144227E1BF08964006E6C19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1144227F1BF08964006E6C19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		114422831BF08964006E6C19 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				114422841BF08964006E6C19 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		114422921BF08964006E6C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		114422931BF08964006E6C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		114422951BF08964006E6C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D333C92A413A055E75A77FA0 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SJSUMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		114422961BF08964006E6C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E26355FDAB1BB260D4A5A2D /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SJSUMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		114422981BF08964006E6C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SJSUMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SJSUMap.app/SJSUMap";
+			};
+			name = Debug;
+		};
+		114422991BF08964006E6C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SJSUMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SJSUMap.app/SJSUMap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1144226C1BF08964006E6C19 /* Build configuration list for PBXProject "SJSUMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114422921BF08964006E6C19 /* Debug */,
+				114422931BF08964006E6C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		114422941BF08964006E6C19 /* Build configuration list for PBXNativeTarget "SJSUMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114422951BF08964006E6C19 /* Debug */,
+				114422961BF08964006E6C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		114422971BF08964006E6C19 /* Build configuration list for PBXNativeTarget "SJSUMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114422981BF08964006E6C19 /* Debug */,
+				114422991BF08964006E6C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 114422691BF08964006E6C19 /* Project object */;
+}
