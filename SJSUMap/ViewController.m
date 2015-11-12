@@ -18,6 +18,8 @@
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet UIImageView *currentDot;
 
+@property (strong, nonatomic) IBOutlet UIButton *highlight;
+
 @property (strong, nonatomic) NSArray *builds;
 @property (strong, nonatomic) buildingItem *KL;
 @property (strong, nonatomic) buildingItem *EB;
@@ -25,6 +27,8 @@
 @property (strong, nonatomic) buildingItem *SU;
 @property (strong, nonatomic) buildingItem *BBC;
 @property (strong, nonatomic) buildingItem *SPG;
+
+@property int centeredBuildNo;
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) NSMutableData *responseData;
@@ -74,6 +78,9 @@
     
     //init the searchBar delegate
     [self.searchBar setDelegate:self];
+    //==================TODO=======
+    //searchBar is not lock on the screen, need fix it
+    
     
     //assign MyLocationViewController as the delegate object.
     //get current location
@@ -94,8 +101,21 @@
     _responseData = [[NSMutableData alloc] init];
     _origins = [[NSString alloc] init];
     
+    //init highlight view
+    _highlight =[UIButton buttonWithType:(UIButtonTypeRoundedRect)];
+    _highlight.alpha = 0.3;
+    _highlight.backgroundColor = [UIColor redColor];
+    [_imageView addSubview: self.highlight];
+    
+    _centeredBuildNo = -1;
+    
 }
 
+- (IBAction)handleButtonClick:(id)sender {
+    
+    //==================TODO
+    //handle highlight button to disappear and show build details
+}
 
 
 - (void)didReceiveMemoryWarning {
@@ -187,8 +207,14 @@
         build = [_builds objectAtIndex:i];
         if( [searchText isEqualToString: build.name] || [searchText isEqualToString: build.name_abb]){
             isBuildName= true;
-            [self highlightBuilding : build.name];
+            
+            //imageView zoom level back to 100%
+            self.scrollView.zoomScale = 1.0;
+            
+            //center the searched building
+            [self moveBuildingCenter : build.name];
             break;
+            
         }else{
             isBuildName = false;
         }
@@ -207,21 +233,31 @@
 
 //Highlight and center the building when user search for it
 
--(void)highlightBuilding:(NSString *) name{
+-(void)moveBuildingCenter:(NSString *) building{
     
-    NSLog(@"You get search result for building %@", name);
+    buildingItem *b = [buildingItem new];
+    double centerX = 185.00;
+    double centerY = 300.00;
     
-    self.scrollView.zoomScale = 1.0;
-    
-    //[self.imageView setCenter:CGPointMake(0,0)];
-    
-    
-    
-    
-    
-    
-    //=================ToDo
-    
+    for(int i =0; i<6; i++){
+        b = [_builds objectAtIndex:i];
+        if ([building isEqualToString: b.name ]) {
+            
+            NSLog(@"You get search result for building %@", b.name);
+            
+            //move the imageView to show building in center
+            [_imageView setFrame: CGRectMake(centerX - b.x, centerY - b.y,
+                                             _imageView.frame.size.height, _imageView.frame.size.width)];
+            
+            //set the highlight to the searched building
+            [_highlight setFrame: CGRectMake(b.x -50, b.y -50, 100,100)];
+            _highlight.layer.cornerRadius = _highlight.bounds.size.width / 2.0;
+            
+            
+             _centeredBuildNo = i;
+            break;
+        }
+    }
 }
 
 
@@ -460,8 +496,6 @@
     b6.y = 468.00;
     b6.destinations = @"330+South+7th+Street%2C+San+Jose%2C+CA+95112";
 }
-
-
 
 
 

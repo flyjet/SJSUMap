@@ -6,15 +6,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SJSUMap/ViewController.m"
-            timestampString = "468980143.800013"
+            timestampString = "469008777.260454"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "277"
-            endingLineNumber = "277"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
             landmarkName = "-calculateDistanceAndTime:"
             landmarkType = "5">
          </BreakpointContent>
