@@ -105,16 +105,33 @@
     _highlight =[UIButton buttonWithType:(UIButtonTypeRoundedRect)];
     _highlight.alpha = 0.3;
     _highlight.backgroundColor = [UIColor redColor];
+    
+    //connect the button click method with button target attribue
+    [_highlight addTarget:self action:@selector(highlightClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
     [_imageView addSubview: self.highlight];
     
     _centeredBuildNo = -1;
     
 }
 
-- (IBAction)handleButtonClick:(id)sender {
-    
-    //==================TODO
+- (IBAction)highlightClicked:(id)sender {
+
     //handle highlight button to disappear and show build details
+    
+    _highlight.alpha = 0;
+    buildingItem *b = [buildingItem new];
+    
+    b = [_builds objectAtIndex:_centeredBuildNo];
+    NSLog(@"Highlight button clicked,distance %@",b.distance);
+    NSLog(@"Highlight button clicked,time %@",b.time);
+    
+    if(b.distance == (id)[NSNull null] || b.distance.length == 0 || b.time == (id)[NSNull null] || b.time.length == 0){
+        [self calculateDistanceAndTime:_centeredBuildNo];
+        
+    }else{
+        [self showBuildingDetails:_centeredBuildNo];
+    }
 }
 
 
@@ -178,7 +195,6 @@
     //=================TODO ==================
     [_locationManager stopUpdatingLocation];
 }
-
 
 
 
@@ -250,6 +266,7 @@
                                              _imageView.frame.size.height, _imageView.frame.size.width)];
             
             //set the highlight to the searched building
+             _highlight.alpha = 0.3;
             [_highlight setFrame: CGRectMake(b.x -50, b.y -50, 100,100)];
             _highlight.layer.cornerRadius = _highlight.bounds.size.width / 2.0;
             
