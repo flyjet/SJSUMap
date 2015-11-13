@@ -192,7 +192,7 @@
     }
     
     //after get current location, then stop location Manager
-    //=================TODO ==================
+
     [_locationManager stopUpdatingLocation];
 }
 
@@ -254,6 +254,8 @@
     buildingItem *b = [buildingItem new];
     double centerX = 185.00;
     double centerY = 300.00;
+    //CGFloat centerX = _scrollView.center.x;
+    //CGFloat centerY = _scrollView.center.y;
     
     for(int i =0; i<6; i++){
         b = [_builds objectAtIndex:i];
@@ -261,9 +263,22 @@
             
             NSLog(@"You get search result for building %@", b.name);
             
+            NSLog(@"building location  %f", b.x);
+            NSLog(@"building location  %f", b.y);
+
+            
             //move the imageView to show building in center
+            
+            
             [_imageView setFrame: CGRectMake(centerX - b.x, centerY - b.y,
                                              _imageView.frame.size.height, _imageView.frame.size.width)];
+            
+            /*
+            CGFloat bX = (CGFloat)b.x;
+            CGFloat bY = (CGFloat)b.y;
+            CGPoint offset = (centerX - bX, centerY - bY);
+            _scrollView.contentOffset = offset; */
+            
             
             //set the highlight to the searched building
              _highlight.alpha = 0.3;
@@ -327,7 +342,7 @@
     NSLog(@"new string %@", url);
     
     //send request to Google Maps Distance Matrix API
-    [[NSURLConnection alloc] initWithRequest:request delegate:self];    
+    [[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
 
 
