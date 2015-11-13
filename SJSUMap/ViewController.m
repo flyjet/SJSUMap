@@ -252,10 +252,9 @@
 -(void)moveBuildingCenter:(NSString *) building{
     
     buildingItem *b = [buildingItem new];
-    double centerX = 185.00;
-    double centerY = 300.00;
-    //CGFloat centerX = _scrollView.center.x;
-    //CGFloat centerY = _scrollView.center.y;
+    
+    double centerX = _scrollView.center.x;
+    double centerY = _scrollView.center.y- 90;
     
     for(int i =0; i<6; i++){
         b = [_builds objectAtIndex:i];
@@ -263,28 +262,21 @@
             
             NSLog(@"You get search result for building %@", b.name);
             
-            NSLog(@"building location  %f", b.x);
-            NSLog(@"building location  %f", b.y);
-
-            
             //move the imageView to show building in center
-            
-            
-            [_imageView setFrame: CGRectMake(centerX - b.x, centerY - b.y,
-                                             _imageView.frame.size.height, _imageView.frame.size.width)];
+            CGPoint offset = CGPointMake(b.x - centerX, b.y -centerY);
+            _scrollView.contentOffset = offset;
             
             /*
-            CGFloat bX = (CGFloat)b.x;
-            CGFloat bY = (CGFloat)b.y;
-            CGPoint offset = (centerX - bX, centerY - bY);
-            _scrollView.contentOffset = offset; */
+            [_imageView setFrame: CGRectMake(centerX - b.x, centerY - b.y,
+                                             _imageView.frame.size.height, _imageView.frame.size.width)]; 
+             NSLog(@"building location  %f", b.x);
+             NSLog(@"building location  %f", b.y);*/
             
             
             //set the highlight to the searched building
              _highlight.alpha = 0.3;
             [_highlight setFrame: CGRectMake(b.x -50, b.y -50, 100,100)];
             _highlight.layer.cornerRadius = _highlight.bounds.size.width / 2.0;
-            
             
              _centeredBuildNo = i;
             break;
